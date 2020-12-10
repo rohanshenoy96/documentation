@@ -3,16 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TitlePlaceholderComponent } from './angular/title-placeholder/title-placeholder.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TitlePlaceholderComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

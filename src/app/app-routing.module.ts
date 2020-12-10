@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { asapScheduler } from 'rxjs';
 
 const routes: Routes = [
+  { path: 'angular', loadChildren: () => import('./angular/angular-documentation.module').then(m => m.AngularDocumentationModule) }
 ];
 
 @NgModule({
