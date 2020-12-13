@@ -1,6 +1,15 @@
-<div class="container u-full-height">
+<div class="container">
     <app-toolbar></app-toolbar>
-    <router-outlet></router-outlet>
+    <div class="body">
+        <div class="body__item sidenav--container">
+            <div class="sidenav">
+                <img class="sidenav__img" src="../../assets/sidenav-logo.svg" alt="Angular">
+                <span class="sidenav__title"> Angular Documentation</span>
+            </div>
+        </div>
+        <div class="body__item docs--container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
     <app-footer></app-footer>
 </div>
-

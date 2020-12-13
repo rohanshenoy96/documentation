@@ -8,7 +8,7 @@ const routes: Routes = [
         path: '',
         component: AngularDocumentation,
         children: [
-            { path: '', component: TitlePlaceholderComponent}
+            { path: 'title', component: TitlePlaceholderComponent}
         ]
     }
 ]
