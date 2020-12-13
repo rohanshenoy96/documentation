@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularDocumentation } from './angular-documentation.component';
-import { TitlePlaceholderComponent } from './index';
+import { GettingStartedComponent, BasicConceptsComponent } from './index';
 
 const routes: Routes = [
     {
         path: '',
         component: AngularDocumentation,
         children: [
-            { path: 'title', component: TitlePlaceholderComponent}
+            { path: 'getting-started', component: GettingStartedComponent},
+            { path: 'basic-concepts', component: BasicConceptsComponent}
         ]
     }
 ]
