@@ -1,8 +1,9 @@
-import { AngularDocumentation } from './angular-documentation.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from "@angular/core";
 
 import { AngularDocumentationRoutingModule } from './angular-documentation-routing.module';
+import { MaterialModule } from './../material.module';
+
+import { AngularDocumentation } from './angular-documentation.component';
 import { TitlePlaceholderComponent, ToolbarComponent, FooterComponent } from './index';
 
 
@@ -14,6 +15,7 @@ import { TitlePlaceholderComponent, ToolbarComponent, FooterComponent } from './
         FooterComponent,
     ],
     imports: [
+        MaterialModule,
         AngularDocumentationRoutingModule
     ],
     exports: []

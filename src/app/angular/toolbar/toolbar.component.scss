@@ -9,7 +9,7 @@
 
 .toolbar img {
     margin: 0;
-    margin-left: 30px;
+    margin-left: 80px;
 }
 
 .toolbar span {
@@ -17,3 +17,11 @@
     font-weight: 200;
     text-transform: uppercase;
 }
+
+.example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+}
+  
