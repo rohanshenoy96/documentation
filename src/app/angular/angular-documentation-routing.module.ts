@@ -11,7 +11,8 @@ const routes: Routes = [
             { path: 'getting-started', component: GettingStartedComponent},
             { path: 'basic-concepts', component: BasicConceptsComponent}
         ]
-    }
+    },
+    { path: '**', redirectTo: 'getting-started'}
 ]
 
 @NgModule({

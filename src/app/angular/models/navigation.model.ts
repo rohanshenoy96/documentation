@@ -1,4 +1,9 @@
 export interface NavigationModel {
     title: string, 
-    route: string
+    docs: Array<DocmumentLink>
+}
+
+interface DocmumentLink{
+    docTitle: string;
+    route: string;
 }
