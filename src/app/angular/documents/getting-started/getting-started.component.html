@@ -1,1 +1,45 @@
-<p>getting-started works!</p>
+<app-title-placeholder [title]="'Getting Started'"></app-title-placeholder>
+
+<div class="grid">
+    <div class="body">
+        <div class="container">
+            <h3 class="title">
+                Install the Angular CLI
+            </h3>
+            <div class="message">
+                <p class="message__item">You use the Angular CLI to create projects, generate application and library code, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.</p>
+                <app-terminal [content]="'npm install @angular/cli'"></app-terminal>
+            </div>
+        </div>
+            
+        <div class="container">
+            <h3 class="title">
+                Create new project
+            </h3>
+            <div class="message">
+                <p class="message__item">Create a new project in Angular using Angular CLI.</p>
+                <app-terminal [content]="'npm new my-app'"></app-terminal>
+            </div>
+        </div>
+            
+        <div class="container">
+            <h3 class="title">
+                Launching the Server
+            </h3>
+            <div class="message">
+                <p class="message__item">The ng serve command launches the server, watches your files, and rebuilds the app as you make changes to those files.</p>
+                
+                <app-terminal [content]="'ng serve --open'"></app-terminal>
+            </div>
+        </div>   
+    </div>
+
+    <div class="right-sidenav">
+        <ul>
+            <li>Install the Angular CLI</li>
+            <li>Create new project</li>
+            <li>Launching the Server</li>
+        </ul>
+    </div>
+     
+</div>

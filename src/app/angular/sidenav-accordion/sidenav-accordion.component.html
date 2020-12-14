@@ -1,7 +1,7 @@
 <div class="cotainer">
     <div class="accordion">
         <p class="accordion__text" (click)="toggleAccordion()">
-            <i class="fas fa-chevron-right"></i> {{data.title}}
+            <i *ngIf="toggle" class="fas fa-chevron-down"></i> <i *ngIf="!toggle" class="fas fa-chevron-right"></i> {{data.title}}
         </p>
         <ul class="accordion__list" [ngClass]="toggle? '': 'hidden'">
             <li class="accordion__list--item" *ngFor="let record of data.docs" (click)="navigateToRoute(record.route)">{{record.docTitle}}</li>
