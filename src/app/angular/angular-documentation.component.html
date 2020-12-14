@@ -5,6 +5,13 @@
             <div class="sidenav">
                 <img class="sidenav__img" src="../../assets/sidenav-logo.svg" alt="Angular">
                 <span class="sidenav__title"> Angular Documentation</span>
+                <div class="sidenav__body" *ngIf="navigationData">
+                    <ng-container *ngFor="let data of navigationData">
+                        <app-sidenav-accordion [data]="data"></app-sidenav-accordion>
+                    </ng-container>
+                    
+                    
+                </div>
             </div>
         </div>
         <div class="body__item docs--container">
