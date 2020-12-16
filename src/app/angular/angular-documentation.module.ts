@@ -1,14 +1,18 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
+import { HttpClientModule} from '@Angular/common/http';
 
 import { AngularDocumentationRoutingModule } from './angular-documentation-routing.module';
 import { MaterialModule } from './../material.module';
 
 import { AngularDocumentation } from './angular-documentation.component';
-import { TitlePlaceholderComponent, ToolbarComponent, FooterComponent, GettingStartedComponent, BasicConceptsComponent, TerminalComponent } from './index';
+import { TitlePlaceholderComponent, ToolbarComponent, FooterComponent, GettingStartedComponent, BasicConceptsComponent, TerminalComponent, TableComponent } from './index';
 import { SidenavAccordionComponent } from './sidenav-accordion/sidenav-accordion.component';
+
+/* Services import */
 import { NavigationService } from './services/navigation.service';
-import { TableComponent } from './table/table.component';
+import { GetDataService } from './services/get-data.service';
+
 
 
 @NgModule({
@@ -25,11 +29,13 @@ import { TableComponent } from './table/table.component';
     ],
     imports: [
         CommonModule,
+        HttpClientModule,
         MaterialModule,
         AngularDocumentationRoutingModule
     ],
     providers: [
-        NavigationService
+        NavigationService,
+        GetDataService
     ],
     exports: []
 })

@@ -5,3 +5,4 @@ export * from './title-placeholder/title-placeholder.component';
 export * from './documents/getting-started/getting-started.component';
 export * from './documents/basic-concepts/basic-concepts.component';
 export * from './terminal/terminal.component';
+export * from './table/table.component';
