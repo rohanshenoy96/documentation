@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetDataService } from '../../services/get-data.service';
 
 @Component({
   selector: 'app-getting-started',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./getting-started.component.scss']
 })
 export class GettingStartedComponent implements OnInit {
+  ngServeData: any;
+  constructor(private getDataService: GetDataService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    // this.getDataService.getNgServeData()
+    //   .subscribe(data => {
+    //     this.ngServeData = data;
+    //   });
   }
 
 }

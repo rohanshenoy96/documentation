@@ -1,0 +1,46 @@
+{
+    "columnDef": [
+        {
+            "title": "Option",
+            "propertyName": "option"
+        }, 
+        {
+            "title": "Description",
+            "propertyName": "description"
+        } 
+    ],
+    "data": [
+        {
+            "option": "--aot=true|false",
+            "description": "Build using Ahead of Time compilation."
+        },
+        {
+            "option": "--baseHref=baseHref",
+            "description": "Build using Ahead of Time compilationBase url for the application being built."
+        },
+        {
+            "option": "--port",
+            "description": "Port to listen on. \nDefault: 4200"
+        },
+        {
+            "option": "--browserTarget=browserTarget",
+            "description": "Target to serve."
+        }, 
+        {
+            "option": "--host=host",
+            "description": "Host to listen on. \nDefault: localhost"
+        },
+        {
+            "option": "--open=true|false",
+            "description": "Opens the URL in default browser. \nDefault: false \nAliases: -o"
+        },
+        {
+            "option": "--prod=true|false",
+            "description": "Shorthand for \"--configuration=production\". When true, sets the build configuration to the production target. By default, the production target is set up in the workspace configuration such that all builds make use of bundling, limited tree-shaking, and also limited dead code elimination."
+        },
+        {
+            "option": "--ssl=true|false",
+            "description": "Serve using HTTPS. \nDefault: false"
+        }
+    ]
+}

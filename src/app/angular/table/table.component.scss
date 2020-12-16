@@ -1,0 +1,31 @@
+table, td, th {
+    border-top: 1px solid lightgray; //rgba(lightgray, 0.5);
+    border-bottom: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+
+    &__header, &__row {
+        padding: 10px 5px;
+    }
+
+    &__header {
+        text-transform: uppercase;
+    }
+
+    tr:nth-last-of-type(odd) {
+        background-color: lighten($color: #dee2e6, $amount: 7);
+        background-color: #fff;
+    }
+
+    tr:nth-last-of-type(even) {
+        background-color: lighten($color: #dee2e6, $amount: 7);
+        // background-color: #fff;
+    }
+
+}
+
+//1px solid #dee2e6
